@@ -1,9 +1,9 @@
 ---
-title: Early Edition Release: radx.io the codable math game®
-date: 2026-1-7
-tags: [Games, Radx.io]
+title: "Early Edition Release: radx.io the codable math game®"
+date: "2026-1-7"
+tags: ["Games", "Radx.io"]
 pinned: true
-summary: Details of the first early edition release
+summary: "Details of the first early edition release"
 ---
 Thank you for your interest in radx.io the codable math game®! This is the early edition release, offered in two formats that share the same underlying rules and gameplay.
 
