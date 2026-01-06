@@ -1,6 +1,6 @@
 ---
 title: "Early Edition Release: radx.io the codable math game®"
-date: "2026-1-7"
+date: "2026-01-07"
 tags: ["Games", "Radx.io"]
 pinned: true
 summary: "Details of the first early edition release"
