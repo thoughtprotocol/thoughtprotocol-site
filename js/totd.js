@@ -79,7 +79,7 @@
   }
 
   async function loadPost(file) {
-    const res = await fetch("/totd/posts/" + file, { cache: "no-store" });
+    const res = await fetch("totd/posts/" + file, { cache: "no-store" });
     if (!res.ok) throw new Error("Could not load post: " + file);
     const raw = await res.text();
     const { meta, body } = parseFrontmatter(raw);
