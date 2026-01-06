@@ -11,7 +11,7 @@ radx.io the codable math game® is exactly that: codable. Because we are just pl
 
 Lovelace’s contribution is more about how she thought than what code she wrote. She understood computation as a process of symbolic manipulation governed by rules, distinct from the physical machine itself. Naming our first game **Ada!** is both a tribute and a reminder that before modern computers, people were already learning to think computationally.
 
-![Ada Lovelace](assets/img/500px-Ada_Lovelace_portrait.jpg)
+![Ada Lovelace|50%](assets/img/500px-Ada_Lovelace_portrait.jpg)
 
 
 ---
@@ -21,4 +21,5 @@ Lovelace’s contribution is more about how she thought than what code she wrote
 - Computer History Museum: Early History of Computing
 
 - Watercolor portrait of Ada King, Countess of Lovelace (Ada Lovelace) By Alfred Edward Chalon - Science Museum Group, Public Domain, sourced from https://commons.wikimedia.org/w/index.php?curid=28131684
+
 
