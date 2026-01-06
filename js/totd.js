@@ -1,5 +1,5 @@
 (async function () {
-  const POSTS_BASE = "totd/posts/";
+  const POSTS_BASE = "/totd/posts/";
   const POSTS_MANIFEST = POSTS_BASE + "manifest.json";
 
   // Lightweight frontmatter parser (--- ... ---)
