@@ -1,0 +1,6 @@
+{
+  "posts": [
+    { "file": "pinned-post.md" },
+    { "file": "ada-lovelace.md" }
+  ]
+}

@@ -1,0 +1,504 @@
+/* Thought Protocol — Square-style catalog (Bootstrap) */
+
+.site-header {
+  background: var(--bs-body-bg);
+  backdrop-filter: saturate(180%) blur(12px);
+}
+
+.brand-mark { width: 34px; height: 34px; }
+.brand-wordmark { font-weight: 650; letter-spacing: 0.2px; }
+
+.kicker {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--bs-secondary-color);
+}
+
+.nav-pills-lite .nav-link {
+  border-radius: 999px;
+  padding: 0.5rem 0.85rem;
+  color: var(--bs-body-color);
+  opacity: 0.9;
+}
+
+.nav-pills-lite .nav-link:hover { opacity: 1; }
+
+.nav-pills-lite .nav-link.active {
+  background: rgba(127,127,127,0.15);
+  color: var(--bs-body-color);
+}
+
+.btn-ghost {
+  border: 1px solid rgba(127,127,127,0.25);
+  border-radius: 999px;
+}
+
+.hero-card {
+  background: linear-gradient(180deg, rgba(127,127,127,0.12), transparent);
+}
+
+.product-frame { background: rgba(127,127,127,0.08); }
+
+.badge-soft { background: rgba(127,127,127,0.15); color: var(--bs-body-color); }
+
+.surface-card {
+  border: 1px solid rgba(127,127,127,0.20);
+  background: rgba(127,127,127,0.08);
+}
+
+.product-card {
+  border: 1px solid rgba(127,127,127,0.25);
+  background: rgba(127,127,127,0.04);
+}
+
+.spec-tile {
+  border: 1px solid rgba(127,127,127,0.25);
+  background: rgba(127,127,127,0.06);
+}
+
+.founder-photo {
+  width: 160px;
+  height: 120px;
+  background: rgba(127,127,127,0.06);
+}
+
+/* Light/Dark surfaces */
+html[data-bs-theme="light"] body { background-color: #f8f7f3; }
+html[data-bs-theme="dark"] body { background-color: #000000; }
+
+/* Navbar horizontal safety */
+.navbar .navbar-nav { flex-wrap: nowrap; white-space: nowrap; }
+
+/* Carousel controls: hide on mobile (swipe-only) */
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next { display: none; }
+}
+
+/* Carousel arrow color: force WHITE by overriding Bootstrap variables (guaranteed) */
+.carousel {
+  --bs-carousel-control-prev-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  --bs-carousel-control-next-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M4.646 14.354a.5.5 0 0 1 0-.708L10.293 8 4.646 2.354a.5.5 0 1 1 .708-.708l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708 0z'/%3e%3c/svg%3e");
+  --bs-carousel-control-icon-filter: none;
+}
+
+
+
+/* Links */
+a{
+  color: var(--rx-accent);
+}
+a:hover{
+  color: var(--rx-accent-2);
+}
+
+/* Buttons */
+.btn-primary{
+  background-color: var(--rx-accent);
+  border-color: var(--rx-accent);
+}
+.btn-primary:hover,
+.btn-primary:focus{
+  background-color: var(--rx-accent-2);
+  border-color: var(--rx-accent-2);
+}
+.btn-outline-primary{
+  color: var(--rx-accent);
+  border-color: var(--rx-accent);
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus{
+  background-color: var(--rx-accent);
+  border-color: var(--rx-accent);
+  color: #fff;
+}
+
+/* Section kicker + subtle underline */
+.section-kicker{
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--rx-accent) !important;
+}
+.section-kicker::after{
+  content: "";
+  display: block;
+  width: 44px;
+  height: 2px;
+  margin-top: .5rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--rx-accent), var(--rx-accent-2));
+  opacity: .9;
+}
+
+/* Badges */
+.badge-soft{
+  background: linear-gradient(90deg, var(--rx-soft), var(--rx-soft-2));
+  border: 1px solid rgba(255,255,255,.0);
+}
+html[data-bs-theme="dark"] .badge-soft{
+  border-color: rgba(255,255,255,.08);
+}
+
+/* Card pop: accent border + hover glow (subtle) */
+.card{
+  border-color: rgba(127,127,127,.18);
+}
+.product-card,
+.card.product-card{
+  border-color: var(--rx-border);
+}
+.product-card:hover,
+.card.product-card:hover{
+  box-shadow: 0 1.1rem 2.6rem rgba(39,194,255,.10), 0 .6rem 1.6rem rgba(124,77,255,.08);
+}
+
+/* Focus ring */
+:focus-visible{
+  outline: 3px solid rgba(39, 194, 255, .45);
+  outline-offset: 2px;
+}
+
+/* Dark mode tuning: keep black background, but brighten accents and borders */
+html[data-bs-theme="dark"] a{ color: #6ad7ff; }
+html[data-bs-theme="dark"] a:hover{ color: #b49bff; }
+html[data-bs-theme="dark"] .product-card,
+html[data-bs-theme="dark"] .card.product-card{
+  border-color: rgba(106, 215, 255, .32);
+}
+
+
+
+
+/* =========================================
+   Radxio Color System
+   ========================================= */
+:root {
+  --rx-blue: #00B0F0;
+  --rx-red: #FF0000;
+  --rx-yellow: #FFFF00;
+  --rx-green: #00B050;
+
+  --rx-soft-blue: rgba(0,176,240,.15);
+  --rx-soft-green: rgba(0,176,80,.15);
+}
+
+/* Links */
+a { color: var(--rx-blue); }
+a:hover { color: var(--rx-green); }
+
+/* Product cards */
+.product-card,
+.card.product-card {
+  border: 1px solid var(--rx-soft-blue);
+}
+.product-card:hover,
+.card.product-card:hover {
+  box-shadow: 0 10px 28px rgba(0,176,240,.25);
+}
+
+/* Section headers */
+.section-kicker {
+  color: var(--rx-blue) !important;
+}
+.section-kicker::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin-top: .5rem;
+  background: linear-gradient(90deg,
+    var(--rx-blue),
+    var(--rx-red),
+    var(--rx-yellow),
+    var(--rx-green)
+  );
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--rx-blue);
+  border-color: var(--rx-blue);
+}
+.btn-primary:hover {
+  background-color: var(--rx-green);
+  border-color: var(--rx-green);
+}
+
+/* Dark mode tuning */
+html[data-bs-theme="dark"] .product-card {
+  border-color: rgba(0,176,240,.45);
+}
+
+/* =========================================
+   Navbar brand text (static, theme-aware)
+   ========================================= */
+
+   .navbar-brand-text {
+    font-weight: 600;
+    margin-left: 0.5rem;
+    white-space: nowrap;
+  }
+  
+  /* Light mode */
+  html[data-bs-theme="light"] .navbar-brand-text {
+    color: #000000;
+  }
+  
+  /* Dark mode */
+  html[data-bs-theme="dark"] .navbar-brand-text {
+    color: #ffffff;
+  }
+
+  /* =========================================
+   Primary CTA Buttons (Dark Blue)
+   ========================================= */
+
+/* Base button look */
+.btn-primary,
+.btn-outline-secondary {
+  background-color: #003A5D; /* deep blue */
+  border-color: #003A5D;
+  color: #ffffff !important;
+}
+
+/* Hover state */
+.btn-primary:hover,
+.btn-outline-secondary:hover {
+  background-color: #005b8f;
+  border-color: #005b8f;
+  color: #ffffff !important;
+}
+
+/* Focus / active */
+.btn-primary:focus,
+.btn-outline-secondary:focus,
+.btn-primary:active,
+.btn-outline-secondary:active {
+  background-color: #004a78;
+  border-color: #004a78;
+  color: #ffffff !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 176, 240, 0.35);
+}
+
+/* =========================================
+   Unified Card Styling (All Cards)
+   ========================================= */
+
+   .card {
+    border: 1px solid rgba(0,176,240,.28);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+  }
+  
+  .card:hover {
+    box-shadow:
+      0 0 0 2px rgba(0,176,240,.25),
+      0 18px 34px rgba(0,176,240,.22);
+    transform: translateY(-2px);
+  }
+  
+  /* Navbar hover color override */
+html[data-bs-theme="dark"] .navbar .nav-link:hover {
+  color: #00B0F0 !important;
+}
+
+/* Light mode navbar hover */
+html[data-bs-theme="light"] .navbar .nav-link:hover {
+  color: #00B0F0 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  outline: 2px solid var(--rx-blue) !important;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+
+/* Carousel arrows: force BLUE icons */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2300B0F0' viewBox='0 0 16 16'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2300B0F0' viewBox='0 0 16 16'%3e%3cpath d='M4.646 14.354a.5.5 0 0 1 0-.708L10.293 8 4.646 2.354a.5.5 0 1 1 .708-.708l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708 0z'/%3e%3c/svg%3e") !important;
+}
+
+
+
+
+
+/* Outline badge style */
+.badge-outline{
+  color: #ffffff;
+  border: 1.5px solid rgba(255,255,255,0.85);
+  background: transparent;
+  padding: 0.45em 0.75em;
+  font-weight: 500;
+  border-radius: 999px;
+}
+html[data-bs-theme="light"] .badge-outline{
+  color: #111827;
+  border-color: rgba(0,0,0,0.25);
+}
+
+
+/* TOTD cards: keep goosepoop styling, add gentle motion */
+.totd-card .totd-content :where(h1,h2,h3,h4){
+  margin-top: 1rem;
+}
+.totd-card .totd-content p{
+  margin-bottom: 0.75rem;
+}
+.totd-card .totd-content pre{
+  padding: 1rem;
+  border-radius: 1rem;
+  overflow: auto;
+}
+.totd-icon{
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(0,176,240,.35);
+  color: #00B0F0;
+  flex: 0 0 auto;
+}
+
+/* Fade-up animation */
+.animate-in{
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 350ms ease, transform 350ms ease;
+}
+.animate-in.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Filter buttons spacing */
+.totd-filter-btn{
+  white-space: nowrap;
+}
+
+
+.hero-carousel-frame {
+  border-color: #FF0000 !important;
+  box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.3),
+              0 4px 10px rgba(255, 0, 0, 0.25);
+}
+
+
+/* 
+.hero-carousel-frame {
+  border-color: #00B0F0 !important;
+  box-shadow: 0 0 0 1px rgba(0, 176, 240, 0.3),
+              0 12px 30px rgba(0, 176, 240, 0.25);
+}
+*/
+
+/*
+.hero-carousel-frame {
+  border-color: #FFD500 !important;
+  box-shadow: 0 0 0 1px rgba(255, 213, 0, 0.35),
+              0 12px 30px rgba(255, 213, 0, 0.25);
+}
+*/
+
+/*
+.hero-carousel-frame {
+  border-color: #00B050 !important;
+  box-shadow: 0 0 0 1px rgba(0, 176, 80, 0.35),
+              0 4px 10px rgba(0, 176, 80, 0.25);
+}
+*/
+
+.site-footer {
+  padding: 1.25rem 0; /* adjust to taste */
+}
+
+/* Carousel indicator bars — always white */
+.carousel-indicators [data-bs-target] {
+  background-color: #ffffff !important;
+  opacity: 0.5;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+/* Founder photo styling */
+.founder-photo {
+  width: 160px;          /* controls size of the circle */
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.founder-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+@media (max-width: 576px) {
+  .founder-photo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+.dice-byte {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.die {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1.5px solid currentColor;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.die.on::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: currentColor;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dice-weights {
+  gap: 0.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.dice-weight {
+  width: 20px;           /* must match .die width */
+  text-align: center;
+  font-size: 0.7rem;
+  color: var(--bs-secondary-color);
+}
+
+.trademark {
+  font-size: 0.65em;
+  vertical-align: super;
+  margin-left: 0.05em;
+}
+
