@@ -1,5 +1,6 @@
 (async function () {
-  const POSTS_MANIFEST = "totd/posts/manifest.json";
+  const POSTS_BASE = "totd/posts/";
+  const POSTS_MANIFEST = POSTS_BASE + "manifest.json";
 
   // Lightweight frontmatter parser (--- ... ---)
   function parseFrontmatter(raw) {
@@ -79,7 +80,7 @@
   }
 
   async function loadPost(file) {
-    const res = await fetch("totd/posts/" + file, { cache: "no-store" });
+    const res = await fetch(POSTS_BASE + file, { cache: "no-store" });
     if (!res.ok) throw new Error("Could not load post: " + file);
     const raw = await res.text();
     const { meta, body } = parseFrontmatter(raw);
