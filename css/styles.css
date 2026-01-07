@@ -502,3 +502,12 @@ html[data-bs-theme="light"] .badge-outline{
   margin-left: 0.05em;
 }
 
+/* Markdown content images */
+.totd-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 0.75rem;
+}
+
