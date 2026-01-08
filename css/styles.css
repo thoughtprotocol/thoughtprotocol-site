@@ -511,3 +511,7 @@ html[data-bs-theme="light"] .badge-outline{
   border-radius: 0.75rem;
 }
 
+.cta-btn {
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
