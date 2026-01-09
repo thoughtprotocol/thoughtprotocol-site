@@ -526,3 +526,23 @@ html[data-bs-theme="light"] .badge-outline{
     max-width: 420px;
   }
 }
+/* Hero carousel sizing */
+.hero-carousel-frame {
+  width: 100%;
+}
+
+/* Reduce visual size on desktop */
+@media (min-width: 992px) {
+  .hero-carousel-frame {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-width {
+    max-width: 85%;
+  }
+}
+
