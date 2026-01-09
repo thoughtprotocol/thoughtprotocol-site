@@ -1,7 +1,7 @@
 ---
 title: "Ada!: A radx.io game variant named for Ada Lovelace"
 date: "2026-01-07"
-summary: "Why our first game is named after Ada Lovelace, the original computer programmer."
+summary: "Why our first radx.io game variant is named after Ada Lovelace, the original computer programmer."
 tags: [Radx.io, Games, History, Code]
 pinned: false
 ---
@@ -21,6 +21,7 @@ Lovelace’s contribution is more about how she thought than what code she wrote
 - Computer History Museum: Early History of Computing
 
 - Watercolor portrait of Ada King, Countess of Lovelace (Ada Lovelace) By Alfred Edward Chalon - Science Museum Group, Public Domain, sourced from https://commons.wikimedia.org/w/index.php?curid=28131684
+
 
 
 
