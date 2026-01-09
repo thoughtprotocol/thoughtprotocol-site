@@ -515,3 +515,14 @@ html[data-bs-theme="light"] .badge-outline{
   font-weight: 500;
   letter-spacing: 0.01em;
 }
+
+/* What is radx.io image sizing */
+.what-is-img {
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .what-is-img {
+    max-width: 420px;
+  }
+}
