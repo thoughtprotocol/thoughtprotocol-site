@@ -17,8 +17,9 @@ Lovelace’s contribution is more about how she thought than what code she wrote
 ---
 
 ### References
-- Charles Babbage’s Difference Engines and the Science Museum Link: https://www.sciencemuseum.org.uk/objects-and-stories/charles-babbages-difference-engines-and-science-museum
-- Watercolor portrait of Ada King, Countess of Lovelace (Ada Lovelace) By Alfred Edward Chalon - Science Museum Group, Public Domain. Link: https://commons.wikimedia.org/w/index.php?curid=28131684
+- Charles Babbage’s Difference Engines and the Science Museum. https://www.sciencemuseum.org.uk/objects-and-stories/charles-babbages-difference-engines-and-science-museum
+- Ada Lovelace: the Making of a Computer Scientist. https://blogs.bodleian.ox.ac.uk/adalovelace/
+
 
 
 
