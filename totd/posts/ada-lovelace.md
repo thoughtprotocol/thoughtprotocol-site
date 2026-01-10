@@ -17,10 +17,9 @@ Lovelace’s contribution is more about how she thought than what code she wrote
 ---
 
 ### References
-- British Library: Ada Lovelace and the Analytical Engine
-- Computer History Museum: Early History of Computing
+- Charles Babbage’s Difference Engines and the Science Museum Link: https://www.sciencemuseum.org.uk/objects-and-stories/charles-babbages-difference-engines-and-science-museum
+- Watercolor portrait of Ada King, Countess of Lovelace (Ada Lovelace) By Alfred Edward Chalon - Science Museum Group, Public Domain. Link: https://commons.wikimedia.org/w/index.php?curid=28131684
 
-- Watercolor portrait of Ada King, Countess of Lovelace (Ada Lovelace) By Alfred Edward Chalon - Science Museum Group, Public Domain, sourced from https://commons.wikimedia.org/w/index.php?curid=28131684
 
 
 
